@@ -5,6 +5,8 @@
 ---
 
 Minimalist Firefox theme with macOS-style window control buttons **on the left**.
+<img width="1860" height="1136" alt="image" src="https://github.com/user-attachments/assets/4639946f-1c78-4afd-ab54-1820f0f44469" />
+
 
 ---
 
