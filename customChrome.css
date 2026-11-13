@@ -1,0 +1,59 @@
+﻿/* Move traffic light buttons (macOS style) to the left side - COLORED ONLY */
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+:root[tabsintitlebar], :root[customtitlebar] {
+  /* Override the base CSD layout - move buttons to LEFT */
+  #nav-bar {
+    padding-left: 96px !important;
+    padding-right: 8px !important;
+  }
+
+  /* Position titlebar button container on the LEFT */
+  #nav-bar .titlebar-buttonbox-container,
+  #nav-bar #titlebar-buttonbox-container {
+    position: absolute !important;
+    left: 8px !important;
+    right: auto !important;
+    padding: 0 3px 0 4px !important;
+    z-index: 100 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 4px !important;
+  }
+
+  /* Hide only the inner icons/symbols inside buttons, keep background-image (colors) */
+  .titlebar-button .toolbarbutton-icon,
+  .titlebar-button image {
+    display: none !important;
+  }
+
+  /* Reorder buttons: Close (red) first, Maximize (green) second, Minimize (yellow) third */
+  .titlebar-close {
+    order: 1 !important;
+  }
+
+  .titlebar-max,
+  .titlebar-restore {
+    order: 2 !important;
+  }
+
+  .titlebar-min {
+    order: 3 !important;
+  }
+
+  /* Make sure buttons are clickable and visible */
+  .titlebar-button {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+  }
+
+  /* Prevent any elements from overlapping buttons */
+  .titlebar-spacer {
+    display: none !important;
+  }
+
+  /* Fullscreen mode */
+  &:root[inFullscreen] #nav-bar {
+    padding-left: 50px !important;
+  }
+}
