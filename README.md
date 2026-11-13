@@ -5,6 +5,7 @@
 ---
 
 Минималистичная тема Firefox с кнопками управления окном в стиле macOS **слева**.
+<img width="1860" height="1136" alt="image" src="https://github.com/user-attachments/assets/26f9335a-c7f5-4cb6-8bc6-07701ee23db6" />
 
 ---
 
